@@ -1,9 +1,16 @@
-var numbers = [2,3,4,5,6,15,8,9,10];
+var a,b;
 
-for (let i of numbers){
-    if(i/1 == 1){
-    console.log(i);
-}
+for (a = 2 ; a < 10; a++) {
+   var condition = true;
+   for (b = 2; b < a; b++) {
+       if(a % b == 0){
+           var condition = false;
+           break;
+       }
+   }
+   if(condition == true){
+       console.log(b);
+   }
 }
 
 
