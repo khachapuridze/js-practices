@@ -10,10 +10,8 @@ function forEach(arg,cb){
 };
 var arr = [1,2,3];
 
-var a = 'giorgi';
-forEach(a, function(item, i, arr) {
+
+forEach(arr, function(item, i, arr) {
     console.log('index '+i + ': '+item+ ' element of '+' array '+arr);
 });
-
-
 
