@@ -1,16 +1,16 @@
-function f(numb){
+function f(){
     let sum = 0;
-    for (i of numb) {
+    for (i of arguments) {
         if (typeof i ==='number') {
-            sum=sum +i
+            sum=sum +i;
         }
 
         else {
             throw new Error ('all parameters type should be a Number');
         }
     }
-    console.log(sum);
+    return sum;
   
   }
   
-  f([1,2,'gdf'])
+console.log(f(1,2,3));

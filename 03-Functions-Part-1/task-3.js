@@ -13,14 +13,15 @@
 
 
 function f(a,b,d) {
-    if (typeof arguments === 'number'){
-    let c=a-b;
-    return c/d;
+    for (i of arguments){
+        if (typeof i === 'number'){
+            let c=a-b;
+            return c/d;
+        }
+        else {
+            throw new Error ('all parameters type should be a Number');
+        }
     }
-    else {
-        throw new Error ('all parameters type should be a Number');
-    }
-  
 }
 
 console.log(f(9,3,2));
