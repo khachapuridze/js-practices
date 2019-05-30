@@ -14,15 +14,15 @@
 
 function isEven(numb) {
     if(numb%2==0){
-        console.log('true');
+        return 'true';
     }
     else if (typeof numb !== 'number'){
         throw new Error('parameter type is not a Number');
     }
     else  {
-        console.log('false');
+        return 'false';
     }
 
     
 }
-isEven('fg');
+console.log(isEven(5));
