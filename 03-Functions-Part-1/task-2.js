@@ -1,10 +1,9 @@
 function f(){
     let sum = 0;
-    for (i of arguments) {
+    for (let i of arguments) {
         if (typeof i ==='number') {
             sum=sum +i;
         }
-
         else {
             throw new Error ('all parameters type should be a Number');
         }

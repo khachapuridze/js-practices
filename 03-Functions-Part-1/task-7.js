@@ -4,7 +4,7 @@ function getDivisors(numb){
     }
     if (typeof numb ==='number'){
         let arr = [];
-        for (i=1; i<=numb; i++){
+        for (let i=1; i<=numb; i++){
             if (numb % i ==0)
             arr.push(i);
         }

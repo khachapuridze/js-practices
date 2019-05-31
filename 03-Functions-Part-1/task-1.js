@@ -1,4 +1,4 @@
-var f = function(numb) {
+const f = function(numb) {
     if (typeof numb  === 'number'){
         return numb ** 3;
     }
