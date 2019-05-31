@@ -1,5 +1,4 @@
 var arr = ['abcd', 'abcde', 'ab', 'abc'];
-
 function lenghts(arg){
     return arg.length;
 }
