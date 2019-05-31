@@ -5,7 +5,7 @@ function every(arr, callback) {
     if (!(typeof callback === 'function')) {
         throw new Error('second parameter type is not a Function');
     }
-    var res = false;
+    let res = false;
     for (let i = 0; i < arr.length; i++) {
         res = tsk(arr[i], i , arr);
         if (res == 'true') {
@@ -15,9 +15,9 @@ function every(arr, callback) {
     return res;
 };
   
-const arr = [-2,-3];
+let arr = [-2,-3];
 
-var a = every(arr, function(item, i, arr) {
+let a = every(arr, function(item, i, arr) {
     return item  > 0;
 });
 console.log(a);

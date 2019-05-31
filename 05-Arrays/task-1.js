@@ -1,6 +1,6 @@
 function forEach(arg,cb){
     if (Array.isArray(arg) && typeof cb === 'function' ){
-    for (i=0; i<arg.length; i++){
+    for (let i=0; i<arg.length; i++){
         cb( i, arg[i], arg);
     }
     }
@@ -8,7 +8,7 @@ function forEach(arg,cb){
         throw new Error('Wrong Parameters');
     }
 };
-var arr = [1,2,3];
+let arr = [1,2,3];
 
 
 forEach(arr, function(item, i, arr) {
