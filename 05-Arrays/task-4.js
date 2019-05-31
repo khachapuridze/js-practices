@@ -1,4 +1,4 @@
-function every(arr, callback) {
+function some(arr, callback) {
     if (!Array.isArray(arr)) {
         throw new Error('first parameter type is not an Array');
     }
@@ -7,7 +7,7 @@ function every(arr, callback) {
     }
     let res = false;
     for (let i = 0; i < arr.length; i++) {
-        res = tsk(arr[i], i , arr);
+        res = callback(arr[i], i , arr);
         if (res == 'true') {
             break;
         }
@@ -15,9 +15,9 @@ function every(arr, callback) {
     return res;
 };
   
-let arr = [-2,-3];
+let arr = [-2,-3,5,6];
 
-let a = every(arr, function(item, i, arr) {
+let a = some(arr, function(item, i, arr) {
     return item  > 0;
 });
 console.log(a);
