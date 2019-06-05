@@ -14,13 +14,19 @@ function CoffeeMachine(power) {
     this.run = function() {
 		timerId =  setTimeout(onReady, getBoilTime());
     };
+
     this.stop = function(){
+        if(timerId){
         clearTimeout(timerId);
-        throw new Error("Coffee isn't ready");
+        console.log("Coffee isn't ready");
+    }
+    else{
+        throw new Error('timerId is not defined');
+    }
     }
 }
 
 let coffeeMachine = new CoffeeMachine(50000);
 coffeeMachine.waterAmount = 200;
-coffeeMachine.run();
+
 coffeeMachine.stop();
