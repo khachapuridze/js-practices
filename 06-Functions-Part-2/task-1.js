@@ -9,6 +9,5 @@ const obj = {
 };
 
 const getName = obj.getName;
-
 const f = bind(getName, {name: 'Pitter'}, 'My name');
 console.log(f()); // My name: Pitter
