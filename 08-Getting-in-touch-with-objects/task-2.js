@@ -22,7 +22,7 @@
 const person = {
     rate: 0,
     get salary() {
-        if(this.rate == ''){
+        if(this.rate == '' || typeof rate === 'undefined'){
             return 0;
         }
         const today = new Date();
@@ -43,5 +43,5 @@ Object.defineProperty(person, 'salary', {
     configurable: false,
 });
 
-person.rate='';
+person.rate= '';
 console.log(person.salary);
