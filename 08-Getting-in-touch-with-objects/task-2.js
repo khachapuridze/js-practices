@@ -20,7 +20,7 @@
 
 
 const person = {
-    rate: 30,
+    rate: 0,
     get salary() {
         if(this.rate == ''){
             return 0;
@@ -43,5 +43,5 @@ Object.defineProperty(person, 'salary', {
     configurable: false,
 });
 
-person.rate=5;
+person.rate='';
 console.log(person.salary);
