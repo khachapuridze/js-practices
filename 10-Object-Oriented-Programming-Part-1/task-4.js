@@ -24,9 +24,9 @@ function CoffeeMachine(power, capacity) {
 		console.log('Coffee is ready');
     }
     this.setOnReady = function(callback) {
-     return callback();
-    }
-    
+     return onReady=callback;
+	}
+	
 	this.run = function() {
 		setTimeout(onReady, getTimeToBoil());
     };
