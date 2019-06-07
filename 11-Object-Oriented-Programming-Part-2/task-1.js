@@ -1,8 +1,7 @@
-    
 Object.prototype.delay = function(ms) {
     return function () { setTimeout(() => {
-        return this.call(this);
-    },ms)};
+        return this.apply(delay,arguments);
+    },ms)}.bind(this);
 }
 
 function f() {
