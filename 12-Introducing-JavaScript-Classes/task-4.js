@@ -1,10 +1,14 @@
 const MyString = class{
     constructor(){
         this.reverse = function(str){
-            return str.split("").reverse().join("");
-        }
+             let res = '';
+            for (let i = str.length - 1; i >= 0; i--) {
+                res += str[i];
+            }
+            return res;
+    }
         this.ucFirst= function(first){
-            const res = first.charAt(0).toUpperCase() + first.slice(1);
+            const res = first.charAt(0).toUpperCase() + first.substring(1);
             return res;
         }
         this.ucWords = function(words){
