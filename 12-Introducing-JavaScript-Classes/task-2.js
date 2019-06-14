@@ -1,29 +1,25 @@
 const Worker =class{
     constructor(name,surname,rate,days){
-        let _name=name;
-        let _surname=surname;
-        let _rate=rate;
-        let _days=days;
-
-        this.getName = function(){
-            return _name;
-        }
-        this.getSurnname = function(){
-            return _surname;
-        }
-        this.getrate = function(){
-            return _rate;
-        }
-        this.getRate = function(){
-            return _rate
-        }
-        this.getDays = function(){
-            return _days
-        }
-        this.getSalary=function(){
-            return _rate*_days;
-        }
+        this._name=name;
+        this._surname=surname;
+        this._rate=rate;
+        this._days=days;
     }
+        getName(){
+            return this._name;
+        }
+        getSurnname(){
+            return this._surname;
+        }
+        getRate(){
+            return this._rate
+        }
+        getDays(){
+            return this._days
+        }
+        getSalary(){
+            return this._rate * this._days;
+        }
 }
 
 const worker = new Worker('John', 'Smith', 10, 31);
