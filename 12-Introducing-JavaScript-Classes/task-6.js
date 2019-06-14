@@ -24,7 +24,7 @@ class Student extends User{
 }
 
 
-var student = new Student('John', 'Smith', 2015);
+let student = new Student('John', 'Smith', 2015);
 
 console.log(student.name); // print 'John'
 console.log(student.surname); // print 'John'

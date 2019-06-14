@@ -24,7 +24,7 @@ const Validator = class{
   
   
 
-  var validator = new Validator();
+ let validator = new Validator();
   
   console.log(validator.isEmail('jshtml@mail.ru'));
   console.log(validator.isDomain('jshtml.net'));
