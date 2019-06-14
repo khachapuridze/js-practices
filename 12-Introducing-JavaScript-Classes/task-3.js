@@ -1,4 +1,4 @@
-const Worker =class{
+const Worker = class{
     constructor(name,surname,rate,days){
         let _name=name;
         let _surname=surname;
@@ -11,20 +11,17 @@ const Worker =class{
         this.getSurnname = function(){
             return _surname;
         }
-        this.getrate = function(){
-            return _rate;
-        }
         this.getRate = function(){
             return _rate
         }
         this.getDays = function(){
             return _days
         }
-        this.setRate = function(_rateset){
-            return _rate=_rateset;
+        this.setRate = function(rateset){
+            _rate=rateset;
         }
-        this.setDays = function(_daysset){
-            return _days=_daysset;
+        this.setDays = function(daysset){
+            _days=daysset;
         }
         this.getSalary=function(){
             return _rate*_days;
