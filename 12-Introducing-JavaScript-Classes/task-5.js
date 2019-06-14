@@ -19,7 +19,6 @@ const Validator = class{
         let re = /^\+([0-9]+)+\s+\([0-9]+\)+\s+([0-9]+-[0-9]+-[0-9])+[0-9]/;//TODO: fix this case
         return re.test(String(phone).toLowerCase());
     }
-}
   
   }
   
