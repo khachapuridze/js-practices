@@ -16,7 +16,7 @@ const Validator = class{
         return res.test(date);
     }
     isPhone(phone) {
-        let re = /^\+([0-9]+)+\s+\([0-9]+\)+\s+([0-9]+-[0-9]+-[0-9])+[0-9]/;//TODO: fix this case
+        let re = /^\+([0-9]+)+\s+\([0-9]+\)+\s+([0-9]+-[0-9]+-[0-9])+[0-9]/;
         return re.test(String(phone).toLowerCase());
     }
   
